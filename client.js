@@ -30,6 +30,18 @@ const employees = [
     reviewRating: 1
   }
 ];
+function nameEnter(employee){
+
+  for (var i = 0; i < employees.length; i++) {
+    if (employees[i].name = employee){
+      return employees[i];
+    }
+  }
+}
+
+function employeeRating(){
+
+}
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
