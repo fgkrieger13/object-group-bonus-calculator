@@ -39,7 +39,58 @@ function nameEnter(employee){
   }
 }
 
-function employeeRating(){
+function employeeRating(name, employeeNumber, annualSalary, reviewRating){
+
+  for (var i = 0; i < employees.length; i++){
+  if (employees[i].reviewRating <= 2){
+    let el1 = 1.0;
+    let el2 = Number(employees[i].annualSalary * el1);
+    let el3 = Number(employees[i].annualSalary - el2);
+    let review = {
+      name: (name),
+      bonusPercentage: (el1),
+      totalCompensation: (el2),
+      totalBonus: (el3),
+  };
+  return review;
+}
+  if (employees[i].reviewRating === 3){
+    let el1 = 1.04;
+    let el2 = Number(employees[i].annualSalary * el1);
+    let el3 = Number(employees[i].annualSalary - el2);
+    let review = {
+      name: (name),
+      bonusPercentage: (el1),
+      totalCompensation: (el2),
+      totalBonus: (el3),
+  };
+  return review;
+  }
+  if (employees[i].reviewRating === 4){
+    let el1 = 1.06;
+    let el2 = Number(employees[i].annualSalary * el1);
+    let el3 = Number(employees[i].annualSalary - el2);
+    let review = {
+      name: (name),
+      bonusPercentage: (el1),
+      totalCompensation: (el2),
+      totalBonus: (el3),
+  };
+  return review;
+  }
+  if (employees[i].reviewRating === 5){
+    let el1 = 1.10;
+    let el2 = Number(employees[i].annualSalary * el1);
+    let el3 = Number(employees[i].annualSalary - el2);
+    let review = {
+      name: (name),
+      bonusPercentage: (el1),
+      totalCompensation: (el2),
+      totalBonus: (el3),
+  };
+  return review;
+}
+}
 
 }
 
